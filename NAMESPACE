@@ -1,0 +1,6 @@
+export(arithmeticMean)
+export(addition)
+export(krava)
+export(ovce)
+export(zirafa)
+export(slon)
