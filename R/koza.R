@@ -1,3 +1,3 @@
 koza <- function(){
-return(dir())
+return(getwd())
 }
