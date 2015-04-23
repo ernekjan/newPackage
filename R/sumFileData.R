@@ -5,5 +5,5 @@ sumFileData <- function(path){
 	countOfValues <- length(vec)
 	sampleVariance <- var(vec)
 	standardDeviation <- sd(vec)
-	cat('Count of non-empty values: ',countOfValues,\n'Sum:',suma,\n'Sample variance: ',sampleVariance,\n'Sample standard deviation: ',standardDeviation,\n)
+	cat('Count of non-empty values: ',countOfValues,' Sum: ',suma,' Sample variance: ',sampleVariance,' Sample standard deviation: ',standardDeviation)
 }
