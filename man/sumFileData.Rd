@@ -2,7 +2,7 @@
 \alias{sumFileData}
 \title{sumFileData}
 \usage{
-  sumFileData(path)
+  sumFileData(path, var)
 }
 \arguments{
 	\item{path}{Path to the csv file. Required.}
