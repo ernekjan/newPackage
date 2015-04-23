@@ -1,6 +1,6 @@
-sumFileData <- function(path, var){
-	file <- read.csv(path, header = TRUE, sep=",", quote="", dec=".")$var
-	vec <- as.numeric(file)
+sumFileData <- function(path){
+	file <- read.csv(path, header = TRUE, sep=",", quote="", dec=".", stringAsFactors=FALSE)
+	vec <- as.numeric(file[,1])
 	suma <- sum(vec)
 	countOfValues <- length(vec)
 	sampleVariance <- var(vec)
