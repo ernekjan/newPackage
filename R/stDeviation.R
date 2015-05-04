@@ -1,3 +1,3 @@
-cstDeviation <- function(vec){
+stDeviation <- function(vec){
 	sd(vec)
 }
