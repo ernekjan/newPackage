@@ -5,11 +5,11 @@ edfPlot <- function(vec, distribution){
 		nMean <- mean(vec)
 		lVec <- length(vec)
 		nSd <- sqrt(((lVec-1)/lVec)*var(vec))
-		lines(dnorm(vec, mean=nMean, sd=nSd), col="darkblue")
+		lines(pnorm(vec, mean=nMean, sd=nSd), col="darkblue")
 	}else if(distribution=="uniform"){
-		lines(dunif(vec, min=min(vec), max=max(vec), log = FALSE), col="red")
+		lines(punif(vec, min=min(vec), max=max(vec), log = FALSE), col="red")
 	}else if(distribution=="exponencial"){
 		lambda <- (1/mean(vec))
-		lines(dexp(vec, lambda), col="red")
+		lines(pexp(vec, lambda), col="red")
 	}
 }
