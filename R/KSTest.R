@@ -1,4 +1,17 @@
 KSTest <- function(vec, distribution){
-	results=ks.test(vec, ,alternative="two.sided", exact=TRUE)
+
+	if(distribution=="normal"){
+		nMean <- mean(vec)
+		lVec <- length(vec)
+		nSd <- sqrt(((lVec-1)/lVec)*var(vec))
+		y<- pnorm(vec, mean=nMean, sd=nSd)
+	}else if(distribution=="uniform"){
+		y <- punif(vec, min=min(vec), max=max(vec))
+	}else if(distribution=="exponencial"){
+		lambda <- (1/mean(vec))
+		y<-pexp(vec, lambda)
+	}
+
+	results=ks.test(vec, y,alternative="two.sided", exact=TRUE)
 	results
 }
