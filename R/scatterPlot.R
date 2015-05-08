@@ -1,5 +1,5 @@
 scatterPlot <- function(firstData, secondData){
-	if(length(firstData)==length(dataSecondVar)){
+	if(length(firstData)==length(secondData)){
 		if(secondData=="EMPTY"){
 			plot(firstData, firstData, xlab="Data prvního sloupce", ylab="Data druhého sloupce")
 		}else
