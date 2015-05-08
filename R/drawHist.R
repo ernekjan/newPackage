@@ -9,6 +9,6 @@ drawHist <- function(vec, widthOfBin, distribution){
 		lines(dunif(vec, min=min(vec), max=max(vec), log = FALSE), col="red")
 	}else if(distribution=="exponencial"){
 		lambda <- (1/mean(vec))
-		lines(dexp(vec, lambda), col="red")
+		lines(dexp(vec, lambda), col="darkgreen")
 	}
 }
