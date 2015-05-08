@@ -1,5 +1,5 @@
 drawHist <- function(vec, widthOfBin, distribution){
-	hist(vec, right=FALSE, col="yellow", xlab="Hodnota", ylab="Pravděpodobnost", main = paste("Histogram"), breaks=seq(min(vec)-widthOfBin,max(vec)+widthOfBin, by=widthOfBin), prob=TRUE)
+	hist(vec, right=FALSE, col="yellow", xlab="Hodnota", ylab="Pravděpodobnost", main = paste("Histogram"), ylim=c(-0,0.11), breaks=seq(min(vec)-widthOfBin,max(vec)+widthOfBin, by=widthOfBin), prob=TRUE)
 	if(distribution=="normal"){
 		nMean <- mean(vec)
 		lVec <- length(vec)
