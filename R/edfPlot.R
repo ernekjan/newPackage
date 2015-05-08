@@ -10,6 +10,6 @@ edfPlot <- function(vec, distribution){
 		lines(punif(vec, min=min(vec), max=max(vec), log = FALSE), col="red")
 	}else if(distribution=="exponencial"){
 		lambda <- (1/mean(vec))
-		lines(pexp(vec, lambda), col="red")
+		lines(pexp(vec, lambda), col="darkgreen")
 	}
 }
