@@ -1,10 +1,11 @@
-scatterPlot <- function(firstPath, secondPath){
-	firstFile <- read.csv(firstPath, header = TRUE, sep=",", quote="", dec=".", stringsAsFactors=FALSE)
-	secondFile <- read.csv(secondPath, header = TRUE, sep=",", quote="", dec=".", stringsAsFactors=FALSE)
-	dataFirstVar <- as.numeric(firstFile[,1])
-	dataSecondVar <- as.numeric(secondFile[,1])
-	if(length(dataFirstVar)==length(dataSecondVar)){
-		plot(dataFirstVar, dataSecondVar, xlab="firstVariable", ylab="secondVariable")
+scatterPlot <- function(firstData, secondData){
+	if(length(firstData)==length(dataSecondVar)){
+		if(secondData=="EMPTY"){
+			plot(firstData, firstData, xlab="Data prvního sloupce", ylab="Data druhého sloupce")
+		}else
+		{
+			plot(firstData, secondData, xlab="Data prvního sloupce", ylab="Data druhého sloupce")
+		}
 	}else{
 		cat('Different count of values')
 	}
