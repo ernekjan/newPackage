@@ -1,4 +1,4 @@
-KSTwoSam<- function(firstPath, secondPath){
+KSTwoSam<- function(firstPath, secondPath, alpha){
 	
 	firstFile <- read.csv(firstPath, header = TRUE, sep=",", quote="", dec=".", stringsAsFactors=FALSE)
 	secondFile <- read.csv(secondPath, header = TRUE, sep=",", quote="", dec=".", stringsAsFactors=FALSE)
@@ -6,5 +6,11 @@ KSTwoSam<- function(firstPath, secondPath){
 	dataSecondVar <- as.numeric(secondFile[,1])
 
 	results=ks.test(dataFirstVar, dataSecondVar, alternative="two.sided", exact=TRUE)
-	results
+	pValue <- results$p.value
+	if(pValue<alpha){
+		solution <- FALSE
+	}else{
+		solution <- TRUE
+	}
+	c(solution, pValue)
 }
