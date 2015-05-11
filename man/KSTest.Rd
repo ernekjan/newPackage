@@ -9,5 +9,5 @@
 	\item{distribution}{Given distribution to compare withs. Required.}
 }
 \description{
-   Function for Kolmogorov-Smirnov test of population mean. 
+   Function for One-sample Kolmogorov-Smirnov test. 
 }
