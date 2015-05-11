@@ -24,11 +24,11 @@ KSTest <- function(vec, distribution, alpha){
 
 	if(distribution=="normal"){
 		variance <- nSd*nSd
-		ret <- c(solution, distribution, nMean, variance, pValue)
+		ret <- c(solution, "normalni", nMean, variance, pValue)
 	}else if(distribution=="uniform"){
-		ret <- c(solution, distribution, min(vec), max(vec), pValue)
+		ret <- c(solution, "rovnomerne", min(vec), max(vec), pValue)
 	}else if(distribution=="exponencial"){
-		ret <- c(solution, distribution, lambda, 0, pValue)
+		ret <- c(solution, "exponencialni", lambda, 0, pValue)
 	}
 
 	ret
