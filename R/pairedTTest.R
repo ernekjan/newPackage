@@ -5,6 +5,13 @@ pairedTTest <- function(firstPath, secondPath, alpha){
 	dataSecondVar <- as.numeric(secondFile[,1])
 	results=t.test(dataFirstVar, dataSecondVar, alternative="two.sided", paired=TRUE, conf.level=alpha)
 	
-	results
+	pValue <- results$p.value
 	
+	if(pValue<alpha){
+		solution <-FALSE
+	}else{
+		solution <-TRUE
+	}
+	
+	c(solution, pValue)	
 }
