@@ -4,8 +4,8 @@ scatterPlot <- function(firstPath, secondPath){
 	dataFirstVar <- as.numeric(firstFile[,1])
 	dataSecondVar <- as.numeric(secondFile[,1])
 	if(length(dataFirstVar)==length(dataSecondVar)){
-		plot(dataFirstVar, dataSecondVar, xlab="firstVariable", ylab="secondVariable")
+		plot(dataFirstVar, dataSecondVar, xlab="Hodnota 1.veliciny", ylab="Hodnota 2.veliciny", main="Scatter plot")
 	}else{
-		cat('Different count of values')
+		cat('Rozdílný počet hodnot.')
 	}
 }
