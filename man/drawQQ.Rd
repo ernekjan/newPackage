@@ -9,5 +9,5 @@
 	\item{distribution}{Chosen distribution to compare with.}
 }
 \description{
-   Function for drawing histogQ-Q plot for given data and given theoretical distribution to compare with.
+   Function for drawing Q-Q plot for given data and given theoretical distribution to compare with.
 }

@@ -8,5 +8,5 @@
 	\item{vec}{Numeric vector containing data. Required.}
 }
 \description{
-  Function making graph of the empirical distribution function from given data. If distribution value is given, function draws line of this distribution to the edf graph to compare with.
+  Function making graph of the empirical distribution function from given data. Function draws lines of theoretical distributions to the edf graph to compare with.
 }

@@ -7,8 +7,8 @@
 \arguments{
 	\item{firstPath}{Path to the first csv file. Required.}
 	\item{secondPath}{Path to the second csv file. Required.}
-	\item{alpha}{Confidence level.}
+	\item{alpha}{Confidence level. Required.}
 }
 \description{
-   Function for two-tailed test of population mean. 
+   Function for paired t-test of population mean. 
 }

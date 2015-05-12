@@ -7,8 +7,8 @@
 \arguments{
 	\item{vec}{Numeric vector containing data. Required.}
 	\item{mu0}{Hypothesis value of mu. Required.}
-	\item{alpha}{Confidence level.}
+	\item{alpha}{Confidence level. Required.}
 }
 \description{
-   Function for two-tailed test of population mean. 
+   Function for two-tailed t-test of population mean. 
 }
