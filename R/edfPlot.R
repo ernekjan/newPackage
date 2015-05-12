@@ -8,5 +8,5 @@ edfPlot <- function(vec){
 	lines(punif(vec, min=min(vec), max=max(vec), log = FALSE), col="red")
 	lambda <- (1/mean(vec))
 	lines(pexp(vec, lambda), col="darkgreen")
-	legend ((min(vec)+max(vec))/2, 0.1, c("normalni","rovnomerne","exponencialni"), lty=c(1,1,1), lwd=c(2.5,2.5,2.5), col=c("darkblue","red","darkgreen"))
+	legend ((min(vec)+max(vec))/2, 0.2, c("normalni","rovnomerne","exponencialni"), lty=c(1,1,1), lwd=c(2.5,2.5,2.5), col=c("darkblue","red","darkgreen"))
 }
