@@ -1,3 +1,0 @@
-koza <- function(){
-return(getwd())
-}
